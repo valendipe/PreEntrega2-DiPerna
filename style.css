@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
+
+:root {
+    --color-principal: #242612;
+    --color-secundario: #bf3e0f;
+    --font-family: 'Bayon', sans-serif;
+}
+
 /* Index */
 body {
     margin: 0;
@@ -47,7 +54,7 @@ h2 {
 
 }
 
-#newlaunchvideo, #fishing-video {
+#newlaunchvideo {
     position: relative;
     border: 9px solid #bf3e0f;
     left: 130px;
@@ -141,6 +148,13 @@ h2 {
     font-size: 60px;
     position: relative;
     left: 130px;
+}
+
+#fishing-video {
+    position: relative;
+    border: 9px solid #bf3e0f;
+    left: 130px;
+    margin-bottom: 100px;
 }
 
 .fishing-section {
