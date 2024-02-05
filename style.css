@@ -5,22 +5,15 @@
     --color-secundario: #bf3e0f;
     --font-family: 'Bayon', sans-serif;
 }
-
 /* Index */
 body {
     margin: 0;
+    /* Overflow-x: hidden */
 }
 .menu-container {
-    background-color: #242612;
+    background-color: var(--color-principal);
     padding: 10px 0;
     width: 100%;
-    /* Flexbox */
-    display: flex;
-    /* Mover toda esta caja horizontalmente */
-    justify-content: flex-start;
-
-    /* Fijo la posicion*/
-    /* position: fixed; */
     /* Z index para que este elemento pase por encima de todo*/
     z-index: 10;
 }
@@ -34,54 +27,54 @@ body {
     justify-content: space-around;
     align-items: center;
     /*Colores, y fuentes*/
-    font-family: 'Bayon', sans-serif;
+    font-family: var(--font-family);
     font-size: 30px;
 }
 
 nav div a {
     /*Colores y chau subrayado*/
     text-decoration: none;
-    color: #bf3e0f;
+    color: var(--color-secundario);
 }
 
 h2 {
     /*Personalizando etiqueta*/
-    font-family: 'Bayon', sans-serif;
-    color: #242612;
+    font-family: var(--font-family);
+    color: var(--color-principal);
     font-size: 60px;
     position: relative;
     left: 130px;
+    display: inline;
 
 }
 
+.index-container {
+    display: flex;
+    justify-content: space-around;
+}
 #newlaunchvideo {
-    position: relative;
-    border: 9px solid #bf3e0f;
-    left: 130px;
+    border: 9px solid var(--color-secundario);
     margin-bottom: 100px;
 }
-
 #newlaunchfoto {
     position: relative;
-    left: 500px;
-    bottom: 100px;
+    top: 140px;
 }
 
 .vertical-line-1 {
+	border: 1px solid black;
     position: relative;
-    left: 150px;
-    bottom: 260px;
-	border: 1px solid #000000;
-    padding-bottom: 420px;
+    bottom: 30px;
 }
 
 .footer-container {
+    margin-top: 20px;
     padding-top: 10px;
     background-color: black;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center
+    align-items: center 
 }
 
 
@@ -89,8 +82,6 @@ h2 {
     color: white;
     text-decoration: none;
 }
-
-
 /* Camping */
 .title-container {
     background-image: url(multimedia/naturepanoramic.jpg);
