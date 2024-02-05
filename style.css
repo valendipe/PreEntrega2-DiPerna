@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
+/* Index */
+body {
+    margin: 0;
+}
+.menu-container {
+    background-color: #242612;
+    padding: 10px 0;
+    width: 100%;
+    /* Flexbox */
+    display: flex;
+    /* Mover toda esta caja horizontalmente */
+    justify-content: flex-start;
+
+    /* Fijo la posicion*/
+    /* position: fixed; */
+    /* Z index para que este elemento pase por encima de todo*/
+    z-index: 10;
+}
+
+.menu {
+    width: 70%;
+    border: 0;
+
+    /* Flexibilizo esta caja */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*Colores, y fuentes*/
+    font-family: 'Bayon', sans-serif;
+    font-size: 30px;
+}
+
+nav div a {
+    /*Colores y chau subrayado*/
+    text-decoration: none;
+    color: #bf3e0f;
+}
+
+h2 {
+    /*Personalizando etiqueta*/
+    font-family: 'Bayon', sans-serif;
+    color: #242612;
+    font-size: 60px;
+    position: relative;
+    left: 130px;
+
+}
+
+#newlaunchvideo, #fishing-video {
+    position: relative;
+    border: 9px solid #bf3e0f;
+    left: 130px;
+    margin-bottom: 100px;
+}
+
+#newlaunchfoto {
+    position: relative;
+    left: 500px;
+    bottom: 100px;
+}
+
+.vertical-line-1 {
+    position: relative;
+    left: 150px;
+    bottom: 260px;
+	border: 1px solid #000000;
+    padding-bottom: 420px;
+}
+
+.footer-container {
+    padding-top: 10px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+
+.footer-container a, .footer-container p {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Camping */
+.title-container {
+    background-image: url(multimedia/naturepanoramic.jpg);
+    text-align: center;
+    padding: 200px 0 120px 0;
+    color: #fff;
+    font-size: 62px;
+}
+.content-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    
+    .producto-1,
+    .producto-2,
+    .producto-3,
+    .producto-4 {
+        border: 1px solid black;
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    .producto-1 img,
+    .producto-2 img,
+    .producto-3 img,
+    .producto-4 img {
+        width: 100%;
+        height: auto;
+    }
+#REDWHITETENT {
+    margin: 10px;
+    width: 400px;
+} 
+#cooler {
+    margin: 10px;
+    padding-bottom: 7px;
+    width: 300px;    
+}
+#flashlight {
+    margin: 10px;
+    padding-bottom: 23px;
+    padding-right: 30px;
+    width: 200px;
+}
+#sleepingbag {
+    margin: 10px;
+    width: 250px;
+}
+
+/* FISHING */
+.fishing-title, .cycle-title {
+    font-family: 'Bayon', sans-serif;
+    color: #242612;
+    font-size: 60px;
+    position: relative;
+    left: 130px;
+}
+
+.fishing-section {
+    display: flex;
+    align-items: center;
+}
+.fish-container {
+    display: grid;
+    position: relative;
+    left: 300px;
+    bottom: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Espaciado entre los elementos */
+}
+
+.caña-1,
+.caña-2,
+.caña-3,
+.caña-4 {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#caña-1,
+#caña-2,
+#caña-3,
+#caña-4 {
+    width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+}
+#caña-1 {
+    width: 100px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+#caña-2 {
+    width: 100px;
+    margin-bottom: 20px;
+}
+#caña-3 {
+    width: 100px;
+    margin-right: 50px;
+}
+#caña-4 {
+    width: 100px;
+}
+
+/* CYCLING */
+
+.cycle-fotos {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+/* CONTACT */
+.contact-title {
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Bayon', sans-serif;
+    color: #242612;
+    text-decoration: underline dotted #bf3e0f;
+}
+
+label, legend {
+    text-align: center;
+    display: inline;
+    font-family: 'Bayon', sans-serif;
+    font-size: 30px;
+    color: #bf3e0f;
+   
+}
+fieldset {
+    border: 0;
+}
+textarea {
+    width: 100%;
+}
+/* .formulario {
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+.enviar {
+    padding: 10px;
+    margin: 10px;
+    background-color: green;
+    color: #fff;
+}
+form input{
+    width: 100%;
+    border: 0;
+    background-color: yellow;
+} 
+
+label {
+    text-decoration: underline solid #242612;
+}
