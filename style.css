@@ -9,18 +9,12 @@
 /* Index */
 body {
     margin: 0;
+    /* Overflow-x: hidden */
 }
 .menu-container {
-    background-color: #242612;
+    background-color: var(--color-principal);
     padding: 10px 0;
     width: 100%;
-    /* Flexbox */
-    display: flex;
-    /* Mover toda esta caja horizontalmente */
-    justify-content: flex-start;
-
-    /* Fijo la posicion*/
-    /* position: fixed; */
     /* Z index para que este elemento pase por encima de todo*/
     z-index: 10;
 }
@@ -34,54 +28,54 @@ body {
     justify-content: space-around;
     align-items: center;
     /*Colores, y fuentes*/
-    font-family: 'Bayon', sans-serif;
+    font-family: var(--font-family);
     font-size: 30px;
 }
 
 nav div a {
     /*Colores y chau subrayado*/
     text-decoration: none;
-    color: #bf3e0f;
+    color: var(--color-secundario);
 }
 
 h2 {
     /*Personalizando etiqueta*/
-    font-family: 'Bayon', sans-serif;
-    color: #242612;
+    font-family: var(--font-family);
+    color: var(--color-principal);
     font-size: 60px;
     position: relative;
     left: 130px;
+    display: inline;
 
 }
 
+.index-container {
+    display: flex;
+    justify-content: space-around;
+}
 #newlaunchvideo {
-    position: relative;
-    border: 9px solid #bf3e0f;
-    left: 130px;
+    border: 9px solid var(--color-secundario);
     margin-bottom: 100px;
 }
-
 #newlaunchfoto {
     position: relative;
-    left: 500px;
-    bottom: 100px;
+    top: 140px;
 }
 
 .vertical-line-1 {
+	border: 1px solid black;
     position: relative;
-    left: 150px;
-    bottom: 260px;
-	border: 1px solid #000000;
-    padding-bottom: 420px;
+    bottom: 30px;
 }
 
 .footer-container {
+    margin-top: 20px;
     padding-top: 10px;
     background-color: black;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center
+    align-items: center 
 }
 
 
@@ -94,41 +88,18 @@ h2 {
 /* Camping */
 .title-container {
     background-image: url(multimedia/naturepanoramic.jpg);
+    background-attachment: fixed;
     text-align: center;
     padding: 200px 0 120px 0;
     color: #fff;
     font-size: 62px;
+    margin-bottom: 20px;
 }
-.content-section {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-    }
-    
-    .producto-1,
-    .producto-2,
-    .producto-3,
-    .producto-4 {
-        border: 1px solid black;
-        margin: 10px;
-        padding: 10px;
-    }
-    
-    .producto-1 img,
-    .producto-2 img,
-    .producto-3 img,
-    .producto-4 img {
-        width: 100%;
-        height: auto;
-    }
+.camping-products {
+    margin-right: 0;
+}
 #REDWHITETENT {
-    margin: 10px;
-    width: 400px;
-} 
-#cooler {
-    margin: 10px;
-    padding-bottom: 7px;
-    width: 300px;    
+    padding-top: 18.2%;
 }
 #flashlight {
     margin: 10px;
@@ -138,25 +109,24 @@ h2 {
 }
 #sleepingbag {
     margin: 10px;
-    width: 250px;
+    width: 190px;
 }
 
 /* FISHING */
 .fishing-title, .cycle-title {
-    font-family: 'Bayon', sans-serif;
-    color: #242612;
+    font-family: var(--font-family);
+    color: var(--color-principal);
     font-size: 60px;
     position: relative;
     left: 130px;
+    display: inline;
 }
-
 #fishing-video {
     position: relative;
-    border: 9px solid #bf3e0f;
+    border: 9px solid var(--color-secundario);
     left: 130px;
     margin-bottom: 100px;
 }
-
 .fishing-section {
     display: flex;
     align-items: center;
@@ -213,17 +183,17 @@ h2 {
 .contact-title {
     text-align: center;
     font-size: 70px;
-    font-family: 'Bayon', sans-serif;
-    color: #242612;
-    text-decoration: underline dotted #bf3e0f;
+    font-family: var(--font-family);
+    color: var(--color-principal);
+    text-decoration: underline dotted var(--color-secundario);
 }
 
 label, legend {
     text-align: center;
     display: inline;
-    font-family: 'Bayon', sans-serif;
+    font-family: var(--font-family);
     font-size: 30px;
-    color: #bf3e0f;
+    color: var(--color-secundario);
    
 }
 fieldset {
@@ -238,8 +208,7 @@ textarea {
 } */
 
 .enviar {
-    padding: 10px;
-    margin: 10px;
+    padding-top: 10px;
     background-color: green;
     color: #fff;
 }
@@ -250,5 +219,5 @@ form input{
 } 
 
 label {
-    text-decoration: underline solid #242612;
+    text-decoration: underline solid var(--color-principal);
 }
