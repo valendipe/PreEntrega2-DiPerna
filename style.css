@@ -85,41 +85,18 @@ h2 {
 /* Camping */
 .title-container {
     background-image: url(multimedia/naturepanoramic.jpg);
+    background-attachment: fixed;
     text-align: center;
     padding: 200px 0 120px 0;
     color: #fff;
     font-size: 62px;
+    margin-bottom: 20px;
 }
-.content-section {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-    }
-    
-    .producto-1,
-    .producto-2,
-    .producto-3,
-    .producto-4 {
-        border: 1px solid black;
-        margin: 10px;
-        padding: 10px;
-    }
-    
-    .producto-1 img,
-    .producto-2 img,
-    .producto-3 img,
-    .producto-4 img {
-        width: 100%;
-        height: auto;
-    }
+.camping-products {
+    margin-right: 0;
+}
 #REDWHITETENT {
-    margin: 10px;
-    width: 400px;
-} 
-#cooler {
-    margin: 10px;
-    padding-bottom: 7px;
-    width: 300px;    
+    padding-top: 18.2%;
 }
 #flashlight {
     margin: 10px;
@@ -129,7 +106,7 @@ h2 {
 }
 #sleepingbag {
     margin: 10px;
-    width: 250px;
+    width: 190px;
 }
 
 /* FISHING */
