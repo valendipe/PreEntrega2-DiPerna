@@ -12,13 +12,36 @@
     <body>
         <!--Inicio header-->
         <header>
-            <nav class="menu-container">
-                <div class="menu">
-                    <a href="../index.html" class="logo"><img src="../multimedia/logo/logo-preentrega1.png" alt="" width="100px"></a>
-                    <div class="camping"><a href="camping.html">CAMPING</a></div>
-                    <div class="fishing"><a href="fishing.html">FISHING</a></div>
-                    <div class="cycle"><a href="cycle.html">CYCLE</a></div>
-                    <div class="contact"><a href="contact.html">CONTACT</a></div>
+            <nav class="navbar navbar-expand-lg mi-navbar">
+                <a class="navbar-brand" href="../index.html"><img src="../multimedia/logo/logo-preentrega1.png" width="100rem" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+                  <span><img src="/multimedia/hamburguesa.png" width="50px" alt=""></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="adventure">Adventure</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 color-yo">
+                                <li class="nav-item">
+                                <a class="mi-estilo active " aria-current="page" href="../index.html">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="mi-estilo" href="camping.html">CAMPING</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="mi-estilo" href="fishing.html">FISHING</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="mi-estilo" href="cycle.html">CYCLE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="mi-estilo" href="contact.html">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </header>
