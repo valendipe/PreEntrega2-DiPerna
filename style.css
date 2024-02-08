@@ -59,6 +59,12 @@ h2 {
 #newlaunchfoto {
     position: relative;
     top: 140px;
+    transform: scale(1);
+    transition: transform 1s;   
+}
+#newlaunchfoto:hover {
+    transform: scale(1.2);
+    transition: all 1s;
 }
 
 .vertical-line-1 {
