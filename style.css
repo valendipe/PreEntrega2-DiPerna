@@ -10,33 +10,20 @@ body {
     margin: 0;
     /* Overflow-x: hidden */
 }
-.menu-container {
-    background-color: var(--color-principal);
-    padding: 10px 0;
-    width: 100%;
-    /* Z index para que este elemento pase por encima de todo*/
-    z-index: 10;
-}
-
-.menu {
-    width: 70%;
-    border: 0;
-
-    /* Flexibilizo esta caja */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /*Colores, y fuentes*/
+.color-yo {
+    color: var(--color-secundario);
     font-family: var(--font-family);
     font-size: 30px;
 }
-
-nav div a {
-    /*Colores y chau subrayado*/
-    text-decoration: none;
+.mi-estilo {
     color: var(--color-secundario);
+    text-decoration: none;
+    margin-right: 100px;
 }
-
+.mi-navbar {
+    background-color: var(--color-principal);
+}
+/* Deskstop*/
 @media only screen and (min-width: 980px) {
     h2 {
         /*Personalizando etiqueta*/
@@ -50,6 +37,9 @@ nav div a {
     }
     
     .index-container {
+        position: relative;
+        top: 100px;
+        margin-bottom: 100px;
         display: flex;
         justify-content: space-around;
     }
@@ -89,8 +79,11 @@ nav div a {
         text-decoration: none;
     }
 }
+/* Mobile */
 @media only screen and (max-width: 480px) {
     h2 {
+        position: relative;
+        top: 150px;
         /*Personalizando etiqueta*/
         font-family: var(--font-family);
         color: var(--color-principal);
@@ -102,6 +95,7 @@ nav div a {
     }
     
     .index-container {
+        margin-top: 100px;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -139,7 +133,8 @@ nav div a {
         color: white;
         text-decoration: none;
     }
-}
+} 
+
 /* Camping */
 .title-container {
     background-image: url(multimedia/naturepanoramic.jpg);
