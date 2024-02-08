@@ -139,7 +139,8 @@ body {
 .title-container {
     background-image: url(multimedia/naturepanoramic.jpg);
     background-attachment: fixed;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     padding: 200px 0 120px 0;
     color: #fff;
     font-size: 62px;
