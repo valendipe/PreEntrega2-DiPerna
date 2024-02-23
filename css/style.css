@@ -1,3 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Bayon&display=swap");
+@media only screen and (min-width: 980px) {
+  section h2 {
+    /*Personalizando etiqueta*/
+    font-family: "Bayon", sans-serif;
+    color: #242612;
+    font-size: 60px;
+    position: relative;
+    left: 130px;
+    display: inline;
+  }
+  section .index-container {
+    position: relative;
+    top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+  }
+  section .index-container #new-launch-video {
+    border: 9px solid #bf3e0f;
+    margin-bottom: 100px;
+  }
+  section .index-container .vertical-line-1 {
+    border: 1px solid black;
+    position: relative;
+    bottom: 30px;
+  }
+  section .index-container #new-launch-foto {
+    position: relative;
+    top: 140px;
+    transform: scale(1);
+    transition: transform 1s;
+  }
+  section .index-container #new-launch-foto:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+  }
+}
+@media only screen and (max-width: 480px) {
+  section h2 {
+    position: relative;
+    top: 150px;
+    /*Personalizando etiqueta*/
+    font-family: "Bayon", sans-serif;
+    color: #242612;
+    font-size: 50px;
+    display: inline;
+    position: relative;
+    left: 10px;
+    margin-bottom: 20px;
+  }
+  section .index-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  section .index-container #new-launch-video {
+    border: 9px solid #bf3e0f;
+    margin-bottom: 100px;
+    width: 390px;
+    height: 350px;
+    margin-top: 100px;
+  }
+  section .index-container .vertical-line-1 {
+    border: 1px solid black;
+    position: relative;
+    bottom: 30px;
+    padding-right: 400px;
+  }
+  section .index-container #new-launch-foto {
+    width: 415;
+    height: 230px;
+  }
+}
+.title-container {
+  background-image: url(../multimedia/naturepanoramic.jpg);
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 200px 0 120px 0;
+  color: #fff;
+  font-size: 62px;
+  margin-bottom: 20px;
+}
 
+.camping-products {
+  margin-right: 0;
+}
+
+#REDWHITETENT {
+  padding-top: 18.2%;
+}
+
+#flashlight {
+  margin: 10px;
+  padding-bottom: 23px;
+  padding-right: 30px;
+  width: 200px;
+}
+
+#sleepingbag {
+  margin: 10px;
+  width: 190px;
+}
+
+.color-yo {
+  color: #bf3e0f;
+  font-family: "Bayon", sans-serif;
+  font-size: 30px;
+}
+
+.mi-estilo {
+  color: #bf3e0f;
+  text-decoration: none;
+  margin-right: 100px;
+}
+
+.mi-navbar {
+  background-color: #242612;
+}
+
+.footer-container {
+  margin-top: 20px;
+  padding-top: 10px;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-container a, .footer-container p {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  /* Overflow-x: hidden */
+}
 
 /*# sourceMappingURL=style.css.map */
