@@ -1,0 +1,50 @@
+.contact-title {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 70px;
+    font-family: $font-family;
+    color: $color-principal;
+    text-decoration: underline dotted $color-secundario;
+    margin-bottom: 50px;
+}
+form  {
+    fieldset {
+        border: 0;
+        legend {
+            text-align: center;
+            display: inline;
+            font-family: $font-family;
+            font-size: 30px;
+            color: $color-secundario;
+        }
+        .formulario {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 100px;
+            margin-top: 100px;
+            label {
+                text-align: center;
+                display: inline;
+                font-family: $font-family;
+                font-size: 30px;
+                color: $color-secundario;
+                text-decoration: underline solid $color-principal
+            }
+        }
+    }
+    textarea {
+        width: 100%;
+    }
+    
+    .enviar {
+        padding-top: 10px;
+        background-color: green;
+        color: #fff;
+    }
+    input{
+        width: 100%;
+        border: 0;
+        background-color: yellow;
+    } 
+    
+}

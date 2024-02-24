@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bayon&display=swap");
 @media only screen and (min-width: 980px) {
   section h2 {
@@ -7,6 +8,7 @@
     font-size: 60px;
     position: relative;
     left: 130px;
+    top: 30px;
     display: inline;
   }
   section .index-container {
@@ -75,7 +77,6 @@
   }
 }
 .title-container {
-  background-image: url(../multimedia/naturepanoramic.jpg);
   background-attachment: fixed;
   display: flex;
   justify-content: center;
@@ -103,6 +104,157 @@
 #sleepingbag {
   margin: 10px;
   width: 190px;
+}
+
+.fishing-title {
+  margin-bottom: 100px;
+  font-family: "Bayon", sans-serif;
+  color: #242612;
+  font-size: 60px;
+  position: relative;
+  left: 130px;
+  top: 30px;
+  display: inline;
+}
+
+.fishing-section {
+  display: flex;
+  justify-content: space-around;
+}
+.fishing-section #fishing-video {
+  border: 9px solid #bf3e0f;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+.fishing-section .vertical-line-2 {
+  border: 1px solid black;
+  position: relative;
+  right: 100px;
+}
+.fishing-section .fish-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1r);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 70px;
+  row-gap: 70px;
+  grid-template-areas: "caña-1 caña-2" "caña-3 caña-4";
+  position: relative;
+  right: 100px;
+}
+.fishing-section .fish-container .caña-1 {
+  grid-area: caña-1;
+  transform: scale(1);
+  transition: transform 1s;
+}
+.fishing-section .fish-container .caña-2 {
+  grid-area: caña-2;
+  transform: scale(1);
+  transition: transform 1s;
+}
+.fishing-section .fish-container .caña-3 {
+  grid-area: caña-3;
+  transform: scale(1);
+  transition: transform 1s;
+}
+.fishing-section .fish-container .caña-4 {
+  grid-area: caña-4;
+  transform: scale(1);
+  transition: transform 1s;
+}
+.fishing-section .fish-container .caña-1:hover, .fishing-section .fish-container .caña-2:hover, .fishing-section .fish-container .caña-3:hover, .fishing-section .fish-container .caña-4:hover {
+  transform: scale(1.2);
+  transition: transform 1s;
+}
+.fishing-section .fish-container #caña-1 {
+  width: 200px;
+}
+.fishing-section .fish-container #caña-2 {
+  width: 200px;
+}
+.fishing-section .fish-container #caña-3 {
+  width: 200px;
+}
+.fishing-section .fish-container #caña-4 {
+  width: 200px;
+  height: 200px;
+}
+.fishing-section .fish-container h3 {
+  color: var(--color-principal);
+  font-family: var(--font-family);
+  font-size: 20px;
+}
+
+.cycle-title {
+  font-family: var(--font-family);
+  color: var(--color-principal);
+  font-size: 60px;
+  position: relative;
+  left: 130px;
+  display: inline;
+}
+
+.cycle-fotos {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+.accesorios {
+  transform: scale(1);
+}
+
+.accesorios:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
+.contact-title {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 70px;
+  font-family: "Bayon", sans-serif;
+  color: #242612;
+  text-decoration: underline dotted #bf3e0f;
+  margin-bottom: 50px;
+}
+
+form fieldset {
+  border: 0;
+}
+form fieldset legend {
+  text-align: center;
+  display: inline;
+  font-family: "Bayon", sans-serif;
+  font-size: 30px;
+  color: #bf3e0f;
+}
+form fieldset .formulario {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+form fieldset .formulario label {
+  text-align: center;
+  display: inline;
+  font-family: "Bayon", sans-serif;
+  font-size: 30px;
+  color: #bf3e0f;
+  text-decoration: underline solid #242612;
+}
+form textarea {
+  width: 100%;
+}
+form .enviar {
+  padding-top: 10px;
+  background-color: green;
+  color: #fff;
+}
+form input {
+  width: 100%;
+  border: 0;
+  background-color: yellow;
 }
 
 .color-yo {
