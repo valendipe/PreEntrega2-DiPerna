@@ -1,14 +1,14 @@
 @import '../base/variables';
+@import '../base/extends';
+@import '../base/maps';
 @media only screen and (min-width: 980px) {
-    section {
-        h2 {
+    main {
+        .main-title {
             /*Personalizando etiqueta*/
-            font-family: $font-family;
-            color: $color-principal;
-            font-size: 60px;
             position: relative;
             left: 130px;
             top: 30px;
+            font-size: 60px;
             display: inline;
         }
         .index-container {
@@ -22,7 +22,6 @@
                 margin-bottom: 100px;
             }
             .vertical-line-1 {
-                border: 1px solid black;
                 position: relative;
                 bottom: 30px;
             }
@@ -38,23 +37,121 @@
             }
         }
     }
-}
-@media only screen and (max-width: 480px) {
-    section {
-        h2 {
-            position: relative;
-            top: 150px;
-            /*Personalizando etiqueta*/
-            font-family: $font-family;
-            color: $color-principal;
+    .trending-container {
+        background-color: #EEEEEE;
+        .trending {
             font-size: 50px;
-            display: inline;
+            text-align: center;
+            .trending-span {
+                text-decoration: underline red;
+                text-underline-offset: 0.2em;
+            }
+        }
+        div {
             position: relative;
+            right: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+            a {
+                padding: 5px 30px;
+                border: 2px solid black;
+                margin: 5px 5px;
+                white-space: nowrap;
+                font-weight: 500;
+                &:hover {
+                    text-decoration: underline black;
+                }
+            }
+        }
+    }
+    .boy-girl {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+        .nena, .hombre, .mujer {
+            width: 450px;
+            margin-right: 100px;
+            transition: box-shadow 0.3s ease;
+            &:hover {
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            }
+        }
+        .nena {
+            height: 300px;
+        }
+    }
+    .mid-title {
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        padding: 200px 200px 120px 200px;
+        color: $color-secundario;
+        font-size: 62px;
+        margin-bottom: 20px;
+    }
+    .relojes-container {
+        margin-top: 200px;
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: center;
+        .relojes {
+            margin-right: 50px;
+            position: relative;
+            width: 11.875em;
+            height: 16.5em;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            padding: 0.5em;
+            padding-bottom: 3.4em;
+            &:hover {
+                border: 1px solid black
+              }
+            .title-relojes {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                position: absolute;
+                bottom: 1.875em;
+                font-weight: 400;
+                color: #000;
+            }
+            .price {
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 15px;
+                position: absolute;
+                bottom: 1px;
+                color: #000;
+            }
+        }
+                
+        .image {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+            margin-bottom: 70px;
+          }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    main {
+        .main-title {
+            position: relative;
+            top: 80px;
+            font-size: 50px;
             left: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            display: inline;
         }
         .index-container {
-            margin-top: 100px;
+            margin-top: 60px;
             display: flex;
             justify-content: space-around;
             flex-direction: column;
@@ -67,7 +164,6 @@
                 margin-top: 100px;
             }
             .vertical-line-1 {
-                border: 1px solid black;
                 position: relative;
                 bottom: 30px;
                 padding-right: 400px;
@@ -77,5 +173,114 @@
                 height: 230px;
             }
         }
-    }    
+    }
+    .trending-container {
+        margin-top: 50px;
+        background-color: #EEEEEE;
+        padding-bottom: 10px;
+        .trending {
+            font-size: 50px;
+            text-align: center;
+            .trending-span {
+                text-decoration: underline red;
+                text-underline-offset: 0.2em;
+            }
+        }
+        div {
+            position: relative;
+            right: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+            a {
+                padding: 5px 30px;
+                border: 2px solid black;
+                margin: 5px 5px;
+                white-space: nowrap;
+                font-weight: 500;
+                &:hover {
+                    text-decoration: underline black;
+                }
+            }
+        }
+    }
+    .boy-girl {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        .nena, .hombre, .mujer {
+            width: 300px;
+            margin-left: 50px;
+            transition: box-shadow 0.3s ease;
+            margin-bottom: 40px;
+            &:hover {
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            }
+        }
+        .nena {
+            height: 200px;
+        }
+    }
+    .mid-title {
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        padding: 200px 0 200px 0;
+        color: $color-secundario;
+        font-size: 62px;
+        margin-bottom: 10px;
+    }
+    .relojes-container {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        .relojes {
+            display: flex;
+            flex-direction: column;
+            margin-left: 70px;
+            margin-top: 20px;
+            margin-bottom: 18px;
+            position: relative;
+            left: 50px;
+            width: 11.875em;
+            height: 16.5em;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            padding: 0.5em;
+            padding-bottom: 3.4em;
+            &:hover {
+                border: 1px solid black
+              }
+            .title-relojes {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                position: absolute;
+                bottom: 1.875em;
+                font-weight: 400;
+                color: #000;
+            }
+            .price {
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 15px;
+                position: absolute;
+                bottom: 1px;
+                color: #000;
+            }
+        }
+                
+        .image {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+            margin-bottom: 70px;
+          }
+    }   
 }

@@ -1,0 +1,20 @@
+@import '../base/variables';
+@mixin insane($color, $text-decoration) {
+    color: $color;
+    text-decoration: $text-decoration;
+}
+
+.mi-estilo {
+    @include insane($color-secundario, none)
+}
+.footer-container a, .footer-container p {
+    @include insane(white, none)
+}
+
+.contact-title {
+    @include insane($color-principal, underline dotted $color-secundario)
+}
+
+.trending-items {
+    @include insane($color-principal, none)
+}

@@ -1,79 +1,294 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bayon&display=swap");
+.vertical-line-1, .vertical-line-2 {
+  border: 1px solid black;
+}
+
+.main-title, .trending {
+  /*Personalizando etiqueta*/
+  font-family: "Bayon", sans-serif;
+  color: #242612;
+}
+
+#new-launch-video, #fishing-video {
+  border: 9px solid #bf3e0f;
+  margin-bottom: 100px;
+}
+
 @media only screen and (min-width: 980px) {
-  section h2 {
+  main .main-title {
     /*Personalizando etiqueta*/
-    font-family: "Bayon", sans-serif;
-    color: #242612;
-    font-size: 60px;
     position: relative;
     left: 130px;
     top: 30px;
+    font-size: 60px;
     display: inline;
   }
-  section .index-container {
+  main .index-container {
     position: relative;
     top: 50px;
     margin-bottom: 100px;
     display: flex;
     justify-content: space-around;
   }
-  section .index-container #new-launch-video {
+  main .index-container #new-launch-video {
     border: 9px solid #bf3e0f;
     margin-bottom: 100px;
   }
-  section .index-container .vertical-line-1 {
-    border: 1px solid black;
+  main .index-container .vertical-line-1 {
     position: relative;
     bottom: 30px;
   }
-  section .index-container #new-launch-foto {
+  main .index-container #new-launch-foto {
     position: relative;
     top: 140px;
     transform: scale(1);
     transition: transform 1s;
   }
-  section .index-container #new-launch-foto:hover {
+  main .index-container #new-launch-foto:hover {
     transform: scale(1.2);
     transition: all 1s;
   }
-}
-@media only screen and (max-width: 480px) {
-  section h2 {
-    position: relative;
-    top: 150px;
-    /*Personalizando etiqueta*/
-    font-family: "Bayon", sans-serif;
-    color: #242612;
+  .trending-container {
+    background-color: #EEEEEE;
+  }
+  .trending-container .trending {
     font-size: 50px;
-    display: inline;
+    text-align: center;
+  }
+  .trending-container .trending .trending-span {
+    text-decoration: underline red;
+    text-underline-offset: 0.2em;
+  }
+  .trending-container div {
     position: relative;
-    left: 10px;
+    right: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .trending-container div a {
+    padding: 5px 30px;
+    border: 2px solid black;
+    margin: 5px 5px;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+  .trending-container div a:hover {
+    text-decoration: underline black;
+  }
+  .boy-girl {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  .boy-girl .nena, .boy-girl .hombre, .boy-girl .mujer {
+    width: 450px;
+    margin-right: 100px;
+    transition: box-shadow 0.3s ease;
+  }
+  .boy-girl .nena:hover, .boy-girl .hombre:hover, .boy-girl .mujer:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .boy-girl .nena {
+    height: 300px;
+  }
+  .mid-title {
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 200px 200px 120px 200px;
+    color: #bf3e0f;
+    font-size: 62px;
     margin-bottom: 20px;
   }
-  section .index-container {
-    margin-top: 100px;
+  .relojes-container {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .relojes-container .relojes {
+    margin-right: 50px;
+    position: relative;
+    width: 11.875em;
+    height: 16.5em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 0.5em;
+    padding-bottom: 3.4em;
+  }
+  .relojes-container .relojes:hover {
+    border: 1px solid black;
+  }
+  .relojes-container .relojes .title-relojes {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: absolute;
+    bottom: 1.875em;
+    font-weight: 400;
+    color: #000;
+  }
+  .relojes-container .relojes .price {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 15px;
+    position: absolute;
+    bottom: 1px;
+    color: #000;
+  }
+  .relojes-container .image {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 70px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  main .main-title {
+    position: relative;
+    top: 80px;
+    font-size: 50px;
+    left: 10px;
+    margin-bottom: 10px;
+    display: inline;
+  }
+  main .index-container {
+    margin-top: 60px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
   }
-  section .index-container #new-launch-video {
+  main .index-container #new-launch-video {
     border: 9px solid #bf3e0f;
     margin-bottom: 100px;
     width: 390px;
     height: 350px;
     margin-top: 100px;
   }
-  section .index-container .vertical-line-1 {
-    border: 1px solid black;
+  main .index-container .vertical-line-1 {
     position: relative;
     bottom: 30px;
     padding-right: 400px;
   }
-  section .index-container #new-launch-foto {
+  main .index-container #new-launch-foto {
     width: 415;
     height: 230px;
+  }
+  .trending-container {
+    margin-top: 50px;
+    background-color: #EEEEEE;
+    padding-bottom: 10px;
+  }
+  .trending-container .trending {
+    font-size: 50px;
+    text-align: center;
+  }
+  .trending-container .trending .trending-span {
+    text-decoration: underline red;
+    text-underline-offset: 0.2em;
+  }
+  .trending-container div {
+    position: relative;
+    right: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .trending-container div a {
+    padding: 5px 30px;
+    border: 2px solid black;
+    margin: 5px 5px;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+  .trending-container div a:hover {
+    text-decoration: underline black;
+  }
+  .boy-girl {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .boy-girl .nena, .boy-girl .hombre, .boy-girl .mujer {
+    width: 300px;
+    margin-left: 50px;
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 40px;
+  }
+  .boy-girl .nena:hover, .boy-girl .hombre:hover, .boy-girl .mujer:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .boy-girl .nena {
+    height: 200px;
+  }
+  .mid-title {
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 200px 0 200px 0;
+    color: #bf3e0f;
+    font-size: 62px;
+    margin-bottom: 10px;
+  }
+  .relojes-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .relojes-container .relojes {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    position: relative;
+    left: 50px;
+    width: 11.875em;
+    height: 16.5em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 0.5em;
+    padding-bottom: 3.4em;
+  }
+  .relojes-container .relojes:hover {
+    border: 1px solid black;
+  }
+  .relojes-container .relojes .title-relojes {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: absolute;
+    bottom: 1.875em;
+    font-weight: 400;
+    color: #000;
+  }
+  .relojes-container .relojes .price {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 15px;
+    position: absolute;
+    bottom: 1px;
+    color: #000;
+  }
+  .relojes-container .image {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 70px;
   }
 }
 .title-container {
@@ -106,6 +321,11 @@
   width: 190px;
 }
 
+#new-launch-video, #fishing-video {
+  border: 9px solid #bf3e0f;
+  margin-bottom: 100px;
+}
+
 .fishing-title {
   margin-bottom: 100px;
   font-family: "Bayon", sans-serif;
@@ -122,12 +342,9 @@
   justify-content: space-around;
 }
 .fishing-section #fishing-video {
-  border: 9px solid #bf3e0f;
-  margin-bottom: 100px;
   margin-top: 50px;
 }
 .fishing-section .vertical-line-2 {
-  border: 1px solid black;
   position: relative;
   right: 100px;
 }
@@ -187,8 +404,8 @@
 @media only screen and (max-width: 480px) {
   .fishing-title {
     margin-bottom: 0px;
-    font-family: var(--font-family);
-    color: var(--color-principal);
+    font-family: "Bayon", sans-serif;
+    color: #242612;
     font-size: 50px;
     position: relative;
     top: 50px;
@@ -196,8 +413,6 @@
     display: inline;
   }
   #fishing-video {
-    border: 9px solid var(--color-secundario);
-    margin-bottom: 100px;
     width: 390px;
     height: 350px;
     margin-top: 10px;
@@ -219,7 +434,6 @@
     right: 100px;
   }
   .vertical-line-2 {
-    border: 1px solid black;
     position: relative;
     bottom: 30px;
     padding-right: 20px;
@@ -242,8 +456,8 @@
     margin-left: 100px;
   }
   h3 {
-    color: var(--color-principal);
-    font-family: var(--font-family);
+    color: #242612;
+    font-family: "Bayon", sans-serif;
     font-size: 10px;
     margin-left: 100px;
   }
@@ -290,13 +504,31 @@
     margin-bottom: 100px;
   }
 }
+.mi-estilo {
+  color: #bf3e0f;
+  text-decoration: none;
+}
+
+.footer-container a, .footer-container p {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-title {
+  color: #242612;
+  text-decoration: underline dotted #bf3e0f;
+}
+
+.trending-items {
+  color: #242612;
+  text-decoration: none;
+}
+
 .contact-title {
   margin-top: 100px;
   text-align: center;
   font-size: 70px;
   font-family: "Bayon", sans-serif;
-  color: #242612;
-  text-decoration: underline dotted #bf3e0f;
   margin-bottom: 50px;
 }
 
@@ -325,7 +557,9 @@ form fieldset .formulario label {
   text-decoration: underline solid #242612;
 }
 form textarea {
-  width: 100%;
+  position: relative;
+  left: 100px;
+  width: 80%;
 }
 form .enviar {
   padding-top: 10px;
@@ -338,6 +572,27 @@ form input {
   background-color: yellow;
 }
 
+.mi-estilo {
+  color: #bf3e0f;
+  text-decoration: none;
+}
+
+.footer-container a, .footer-container p {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-title {
+  color: #242612;
+  text-decoration: underline dotted #bf3e0f;
+}
+
+.trending-items {
+  color: #242612;
+  text-decoration: none;
+}
+
+/* Para el .color-yo, color y decoracion*/
 .color-yo {
   color: #bf3e0f;
   font-family: "Bayon", sans-serif;
@@ -345,8 +600,6 @@ form input {
 }
 
 .mi-estilo {
-  color: #bf3e0f;
-  text-decoration: none;
   margin-right: 100px;
 }
 
@@ -354,6 +607,27 @@ form input {
   background-color: #242612;
 }
 
+.mi-estilo {
+  color: #bf3e0f;
+  text-decoration: none;
+}
+
+.footer-container a, .footer-container p {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-title {
+  color: #242612;
+  text-decoration: underline dotted #bf3e0f;
+}
+
+.trending-items {
+  color: #242612;
+  text-decoration: none;
+}
+
+/* Importo etiquetas a y p*/
 .footer-container {
   margin-top: 20px;
   padding-top: 10px;
@@ -362,11 +636,6 @@ form input {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.footer-container a, .footer-container p {
-  color: white;
-  text-decoration: none;
 }
 
 body {

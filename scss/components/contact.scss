@@ -1,10 +1,9 @@
+@import '../base/mixin';
 .contact-title {
     margin-top: 100px;
     text-align: center;
     font-size: 70px;
     font-family: $font-family;
-    color: $color-principal;
-    text-decoration: underline dotted $color-secundario;
     margin-bottom: 50px;
 }
 form  {
@@ -33,7 +32,9 @@ form  {
         }
     }
     textarea {
-        width: 100%;
+        position: relative;
+        left: 100px;
+        width: 80%;
     }
     
     .enviar {

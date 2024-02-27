@@ -1,0 +1,18 @@
+@import '../base/variables';
+%vertical-line {
+    border: 1px solid black;
+}
+
+.vertical-line-1, .vertical-line-2 {
+    @extend %vertical-line;
+}
+
+%title {
+    /*Personalizando etiqueta*/
+    font-family: $font-family;
+    color: $color-principal;
+}
+
+.main-title, .trending {
+    @extend %title
+}
