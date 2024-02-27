@@ -1,5 +1,14 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bayon&display=swap");
+.vertical-line-1, .vertical-line-2 {
+  border: 1px solid black;
+}
+
+#new-launch-video, #fishing-video {
+  border: 9px solid var(--color-secundario);
+  margin-bottom: 100px;
+}
+
 @media only screen and (min-width: 980px) {
   section h2 {
     /*Personalizando etiqueta*/
@@ -23,7 +32,6 @@
     margin-bottom: 100px;
   }
   section .index-container .vertical-line-1 {
-    border: 1px solid black;
     position: relative;
     bottom: 30px;
   }
@@ -66,7 +74,6 @@
     margin-top: 100px;
   }
   section .index-container .vertical-line-1 {
-    border: 1px solid black;
     position: relative;
     bottom: 30px;
     padding-right: 400px;
@@ -106,6 +113,11 @@
   width: 190px;
 }
 
+#new-launch-video, #fishing-video {
+  border: 9px solid var(--color-secundario);
+  margin-bottom: 100px;
+}
+
 .fishing-title {
   margin-bottom: 100px;
   font-family: "Bayon", sans-serif;
@@ -122,12 +134,9 @@
   justify-content: space-around;
 }
 .fishing-section #fishing-video {
-  border: 9px solid #bf3e0f;
-  margin-bottom: 100px;
   margin-top: 50px;
 }
 .fishing-section .vertical-line-2 {
-  border: 1px solid black;
   position: relative;
   right: 100px;
 }
@@ -184,6 +193,67 @@
   font-size: 20px;
 }
 
+@media only screen and (max-width: 480px) {
+  .fishing-title {
+    margin-bottom: 0px;
+    font-family: var(--font-family);
+    color: var(--color-principal);
+    font-size: 50px;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    display: inline;
+  }
+  #fishing-video {
+    width: 390px;
+    height: 350px;
+    margin-top: 10px;
+  }
+  .fishing-section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fish-container {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 30px;
+    grid-template-areas: "caña-1" "caña-2" "caña-3" "caña-4";
+    position: relative;
+    right: 100px;
+  }
+  .vertical-line-2 {
+    position: relative;
+    bottom: 30px;
+    padding-right: 20px;
+    padding-left: 600px;
+  }
+  .caña-1 {
+    grid-area: caña-1;
+    margin-left: 100px;
+  }
+  .caña-2 {
+    grid-area: caña-2;
+    margin-left: 100px;
+  }
+  .caña-3 {
+    grid-area: caña-3;
+    margin-left: 100px;
+  }
+  .caña-4 {
+    grid-area: caña-4;
+    margin-left: 100px;
+  }
+  h3 {
+    color: var(--color-principal);
+    font-family: var(--font-family);
+    font-size: 10px;
+    margin-left: 100px;
+  }
+}
 @media only screen and (min-width: 980px) {
   .cycle-title {
     font-family: "Bayon", sans-serif;
@@ -261,7 +331,9 @@ form fieldset .formulario label {
   text-decoration: underline solid #242612;
 }
 form textarea {
-  width: 100%;
+  position: relative;
+  left: 100px;
+  width: 80%;
 }
 form .enviar {
   padding-top: 10px;
