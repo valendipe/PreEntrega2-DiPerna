@@ -3,49 +3,44 @@
     margin-top: 100px;
     text-align: center;
     font-size: 70px;
-    font-family: $font-family;
+    font-family: var(--font-family);
+    color: var(--color-principal);
+    text-decoration: underline dotted var(--color-secundario);
     margin-bottom: 50px;
 }
-form  {
-    fieldset {
-        border: 0;
-        legend {
-            text-align: center;
-            display: inline;
-            font-family: $font-family;
-            font-size: 30px;
-            color: $color-secundario;
-        }
-        .formulario {
-            display: flex;
-            justify-content: space-evenly;
-            margin-bottom: 100px;
-            margin-top: 100px;
-            label {
-                text-align: center;
-                display: inline;
-                font-family: $font-family;
-                font-size: 30px;
-                color: $color-secundario;
-                text-decoration: underline solid $color-principal
-            }
-        }
-    }
-    textarea {
-        position: relative;
-        left: 100px;
-        width: 80%;
-    }
-    
-    .enviar {
-        padding-top: 10px;
-        background-color: green;
-        color: #fff;
-    }
-    input{
-        width: 100%;
-        border: 0;
-        background-color: yellow;
-    } 
-    
+
+label, legend {
+    text-align: center;
+    display: inline;
+    font-family: var(--font-family);
+    font-size: 30px;
+    color: var(--color-secundario);
+   
+}
+fieldset {
+    border: 0;
+}
+textarea {
+    width: 100%;
+}
+.formulario {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.enviar {
+    padding-top: 10px;
+    background-color: green;
+    color: #fff;
+}
+form input{
+    width: 100%;
+    border: 0;
+    background-color: yellow;
+} 
+
+label {
+    text-decoration: underline solid var(--color-principal);
 }
