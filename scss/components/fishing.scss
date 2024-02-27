@@ -80,8 +80,8 @@
 @media only screen and (max-width: 480px) {
     .fishing-title {
         margin-bottom: 0px;
-        font-family: var(--font-family);
-        color: var(--color-principal);
+        font-family: $font-family;
+        color: $color-principal;
         font-size: 50px;
         position: relative;
         top: 50px;
@@ -136,8 +136,8 @@
         margin-left: 100px;
     }
     h3 {
-        color: var(--color-principal);
-        font-family: var(--font-family);
+        color:$color-principal;
+        font-family: $font-family;
         font-size: 10px;
         margin-left: 100px;
     }

@@ -1,5 +1,6 @@
+@import '../base/variables';
 $videos: (
-    border: 9px solid var(--color-secundario),
+    border: 9px solid $color-secundario,
     margin-bottom: 100px
 );
 #new-launch-video, #fishing-video {

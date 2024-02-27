@@ -4,83 +4,180 @@
   border: 1px solid black;
 }
 
+.main-title, .trending {
+  /*Personalizando etiqueta*/
+  font-family: "Bayon", sans-serif;
+  color: #242612;
+}
+
 #new-launch-video, #fishing-video {
-  border: 9px solid var(--color-secundario);
+  border: 9px solid #bf3e0f;
   margin-bottom: 100px;
 }
 
 @media only screen and (min-width: 980px) {
-  section h2 {
+  main .main-title {
     /*Personalizando etiqueta*/
-    font-family: "Bayon", sans-serif;
-    color: #242612;
-    font-size: 60px;
     position: relative;
     left: 130px;
     top: 30px;
+    font-size: 60px;
     display: inline;
   }
-  section .index-container {
+  main .index-container {
     position: relative;
     top: 50px;
     margin-bottom: 100px;
     display: flex;
     justify-content: space-around;
   }
-  section .index-container #new-launch-video {
+  main .index-container #new-launch-video {
     border: 9px solid #bf3e0f;
     margin-bottom: 100px;
   }
-  section .index-container .vertical-line-1 {
+  main .index-container .vertical-line-1 {
     position: relative;
     bottom: 30px;
   }
-  section .index-container #new-launch-foto {
+  main .index-container #new-launch-foto {
     position: relative;
     top: 140px;
     transform: scale(1);
     transition: transform 1s;
   }
-  section .index-container #new-launch-foto:hover {
+  main .index-container #new-launch-foto:hover {
     transform: scale(1.2);
     transition: all 1s;
   }
+  .trending-container {
+    background-color: #EEEEEE;
+  }
+  .trending-container .trending {
+    font-size: 50px;
+    text-align: center;
+  }
+  .trending-container .trending .trending-span {
+    text-decoration: underline red;
+    text-underline-offset: 0.2em;
+  }
+  .trending-container div {
+    position: relative;
+    right: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .trending-container div a {
+    padding: 5px 30px;
+    border: 2px solid black;
+    margin: 5px 5px;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+  .trending-container div a:hover {
+    text-decoration: underline black;
+  }
+  .boy-girl {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  .boy-girl .nena, .boy-girl .hombre, .boy-girl .mujer {
+    width: 450px;
+    margin-right: 100px;
+    transition: box-shadow 0.3s ease;
+  }
+  .boy-girl .nena:hover, .boy-girl .hombre:hover, .boy-girl .mujer:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .boy-girl .nena {
+    height: 300px;
+  }
 }
 @media only screen and (max-width: 480px) {
-  section h2 {
+  main .main-title {
     position: relative;
-    top: 150px;
-    /*Personalizando etiqueta*/
-    font-family: "Bayon", sans-serif;
-    color: #242612;
+    top: 80px;
     font-size: 50px;
-    display: inline;
-    position: relative;
     left: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    display: inline;
   }
-  section .index-container {
-    margin-top: 100px;
+  main .index-container {
+    margin-top: 60px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
   }
-  section .index-container #new-launch-video {
+  main .index-container #new-launch-video {
     border: 9px solid #bf3e0f;
     margin-bottom: 100px;
     width: 390px;
     height: 350px;
     margin-top: 100px;
   }
-  section .index-container .vertical-line-1 {
+  main .index-container .vertical-line-1 {
     position: relative;
     bottom: 30px;
     padding-right: 400px;
   }
-  section .index-container #new-launch-foto {
+  main .index-container #new-launch-foto {
     width: 415;
     height: 230px;
+  }
+  .trending-container {
+    margin-top: 50px;
+    background-color: #EEEEEE;
+    padding-bottom: 10px;
+  }
+  .trending-container .trending {
+    font-size: 50px;
+    text-align: center;
+  }
+  .trending-container .trending .trending-span {
+    text-decoration: underline red;
+    text-underline-offset: 0.2em;
+  }
+  .trending-container div {
+    position: relative;
+    right: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .trending-container div a {
+    padding: 5px 30px;
+    border: 2px solid black;
+    margin: 5px 5px;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+  .trending-container div a:hover {
+    text-decoration: underline black;
+  }
+  .boy-girl {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .boy-girl .nena, .boy-girl .hombre, .boy-girl .mujer {
+    width: 300px;
+    margin-left: 50px;
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 40px;
+  }
+  .boy-girl .nena:hover, .boy-girl .hombre:hover, .boy-girl .mujer:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .boy-girl .nena {
+    height: 200px;
   }
 }
 .title-container {
@@ -114,7 +211,7 @@
 }
 
 #new-launch-video, #fishing-video {
-  border: 9px solid var(--color-secundario);
+  border: 9px solid #bf3e0f;
   margin-bottom: 100px;
 }
 
@@ -196,8 +293,8 @@
 @media only screen and (max-width: 480px) {
   .fishing-title {
     margin-bottom: 0px;
-    font-family: var(--font-family);
-    color: var(--color-principal);
+    font-family: "Bayon", sans-serif;
+    color: #242612;
     font-size: 50px;
     position: relative;
     top: 50px;
@@ -248,8 +345,8 @@
     margin-left: 100px;
   }
   h3 {
-    color: var(--color-principal);
-    font-family: var(--font-family);
+    color: #242612;
+    font-family: "Bayon", sans-serif;
     font-size: 10px;
     margin-left: 100px;
   }
@@ -309,6 +406,11 @@
 .contact-title {
   color: #242612;
   text-decoration: underline dotted #bf3e0f;
+}
+
+.trending-items {
+  color: #242612;
+  text-decoration: none;
 }
 
 .contact-title {
@@ -374,6 +476,11 @@ form input {
   text-decoration: underline dotted #bf3e0f;
 }
 
+.trending-items {
+  color: #242612;
+  text-decoration: none;
+}
+
 /* Para el .color-yo, color y decoracion*/
 .color-yo {
   color: #bf3e0f;
@@ -402,6 +509,11 @@ form input {
 .contact-title {
   color: #242612;
   text-decoration: underline dotted #bf3e0f;
+}
+
+.trending-items {
+  color: #242612;
+  text-decoration: none;
 }
 
 /* Importo etiquetas a y p*/
