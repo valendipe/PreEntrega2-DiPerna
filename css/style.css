@@ -529,47 +529,48 @@
   text-align: center;
   font-size: 70px;
   font-family: "Bayon", sans-serif;
+  color: var(--color-principal);
+  text-decoration: underline dotted #bf3e0f;
   margin-bottom: 50px;
 }
 
-form fieldset {
-  border: 0;
-}
-form fieldset legend {
+label, legend {
   text-align: center;
   display: inline;
   font-family: "Bayon", sans-serif;
   font-size: 30px;
   color: #bf3e0f;
 }
-form fieldset .formulario {
+
+fieldset {
+  border: 0;
+}
+
+textarea {
+  width: 100%;
+}
+
+.formulario {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 100px;
   margin-top: 100px;
 }
-form fieldset .formulario label {
-  text-align: center;
-  display: inline;
-  font-family: "Bayon", sans-serif;
-  font-size: 30px;
-  color: #bf3e0f;
-  text-decoration: underline solid #242612;
-}
-form textarea {
-  position: relative;
-  left: 100px;
-  width: 80%;
-}
-form .enviar {
+
+.enviar {
   padding-top: 10px;
   background-color: green;
   color: #fff;
 }
+
 form input {
   width: 100%;
   border: 0;
   background-color: yellow;
+}
+
+label {
+  text-decoration: underline solid #242612;
 }
 
 .mi-estilo {
