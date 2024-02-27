@@ -1,4 +1,5 @@
 @import '../base/variables';
+@import '../base/mixin'; /* Para el .color-yo, color y decoracion*/
 .color-yo {
     color:$color-secundario;
     font-family: $font-family;
