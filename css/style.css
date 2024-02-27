@@ -96,6 +96,59 @@
   .boy-girl .nena {
     height: 300px;
   }
+  .mid-title {
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 200px 200px 120px 200px;
+    color: #bf3e0f;
+    font-size: 62px;
+    margin-bottom: 20px;
+  }
+  .relojes-container {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .relojes-container .relojes {
+    margin-right: 50px;
+    position: relative;
+    width: 11.875em;
+    height: 16.5em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 0.5em;
+    padding-bottom: 3.4em;
+  }
+  .relojes-container .relojes:hover {
+    border: 1px solid black;
+  }
+  .relojes-container .relojes .title-relojes {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: absolute;
+    bottom: 1.875em;
+    font-weight: 400;
+    color: #000;
+  }
+  .relojes-container .relojes .price {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 15px;
+    position: absolute;
+    bottom: 1px;
+    color: #000;
+  }
+  .relojes-container .image {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 70px;
+  }
 }
 @media only screen and (max-width: 480px) {
   main .main-title {
@@ -178,6 +231,64 @@
   }
   .boy-girl .nena {
     height: 200px;
+  }
+  .mid-title {
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 200px 0 200px 0;
+    color: #bf3e0f;
+    font-size: 62px;
+    margin-bottom: 10px;
+  }
+  .relojes-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .relojes-container .relojes {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    position: relative;
+    left: 50px;
+    width: 11.875em;
+    height: 16.5em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 0.5em;
+    padding-bottom: 3.4em;
+  }
+  .relojes-container .relojes:hover {
+    border: 1px solid black;
+  }
+  .relojes-container .relojes .title-relojes {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: absolute;
+    bottom: 1.875em;
+    font-weight: 400;
+    color: #000;
+  }
+  .relojes-container .relojes .price {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 15px;
+    position: absolute;
+    bottom: 1px;
+    color: #000;
+  }
+  .relojes-container .image {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 70px;
   }
 }
 .title-container {
