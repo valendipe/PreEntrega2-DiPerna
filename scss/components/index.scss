@@ -6,13 +6,14 @@
         .main-title {
             /*Personalizando etiqueta*/
             position: relative;
-            left: 130px;
+            left: 100px;
             top: 30px;
             font-size: 60px;
             display: inline;
         }
         .index-container {
             position: relative;
+            right: 40px;
             top: 50px;
             margin-bottom: 100px;
             display: flex;
@@ -35,6 +36,12 @@
                     transition: all 1s;
                 }
             }
+        }
+    }
+    .promo {
+        margin-bottom: 30px;
+        #promo-banner {
+            width: 100%;
         }
     }
     .trending-container {
@@ -69,19 +76,30 @@
     }
     .boy-girl {
         margin-top: 40px;
-        display: flex;
-        justify-content: center;
         margin-bottom: 100px;
-        .nena, .hombre, .mujer {
-            width: 450px;
-            margin-right: 100px;
-            transition: box-shadow 0.3s ease;
-            &:hover {
-                box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-            }
-        }
+        display: grid;
+        justify-content: center;
+        grid-template-areas:
+        'mujer hombre nena'
+        'etiqueta-m etiqueta-h etiqueta-n';
         .nena {
+            grid-area: nena;
             height: 300px;
+        }
+        #nena {
+            grid-area: etiqueta-n;
+        }
+        .hombre {
+            grid-area: nena;
+        }
+        #hombre {
+            grid-area: etiqueta-h;
+        }
+        .mujer {
+            grid-area: nena;
+        }
+        #mujer {
+            grid-area: etiqueta-m;
         }
     }
     .mid-title {
@@ -141,6 +159,13 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .promo {
+        margin-bottom: 30px;
+        #promo-banner {
+            width: 100%;
+            height: 200px;
+        }
+    }
     main {
         .main-title {
             position: relative;
@@ -208,24 +233,34 @@
     }
     .boy-girl {
         margin-top: 40px;
-        display: flex;
+        display: grid;
+        row-gap: 30px;
         justify-content: center;
-        margin-bottom: 50px;
-        .nena, .hombre, .mujer {
-            width: 300px;
-            margin-left: 50px;
-            transition: box-shadow 0.3s ease;
-            margin-bottom: 40px;
-            &:hover {
-                box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-            }
-        }
+        grid-template-areas:
+        'mujer' 
+        'hombre' 
+        'nena';
         .nena {
+            grid-area: nena;
             height: 200px;
+            width: 300px;
+            padding-left: 50px;
+        }
+        .hombre {
+            grid-area: nena;
+            width: 300px;
+            padding-left: 50px;
+        }
+        .mujer {
+            grid-area: nena;
+            width: 300px;
+            padding-left: 50px;
+        }
+        #nena, #hombre, #mujer {
+            display: none
         }
     }
     .mid-title {
-        background-attachment: fixed;
         display: flex;
         justify-content: center;
         padding: 200px 0 200px 0;

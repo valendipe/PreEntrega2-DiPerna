@@ -16,3 +16,28 @@
 .main-title, .trending {
     @extend %title
 }
+
+%fotos-index {
+    width: 450px;
+    margin-right: 100px;
+    transition: box-shadow 0.3s ease;
+    &:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);}
+}
+
+.nena, .hombre, .mujer {
+    @extend %fotos-index
+}
+
+%fotos-h3 {
+    color: $color-principal;
+    font-size: 30px;
+    font-family: $font-family;
+    margin-top: 20px;
+    position: relative;
+    left: 190px;
+}
+
+#nena, #hombre, #mujer {
+    @extend %fotos-h3
+}

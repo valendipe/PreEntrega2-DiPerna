@@ -10,6 +10,24 @@
   color: #242612;
 }
 
+.nena, .hombre, .mujer {
+  width: 450px;
+  margin-right: 100px;
+  transition: box-shadow 0.3s ease;
+}
+.nena:hover, .hombre:hover, .mujer:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#nena, #hombre, #mujer {
+  color: #242612;
+  font-size: 30px;
+  font-family: "Bayon", sans-serif;
+  margin-top: 20px;
+  position: relative;
+  left: 190px;
+}
+
 #new-launch-video, #fishing-video {
   border: 9px solid #bf3e0f;
   margin-bottom: 100px;
@@ -19,13 +37,14 @@
   main .main-title {
     /*Personalizando etiqueta*/
     position: relative;
-    left: 130px;
+    left: 100px;
     top: 30px;
     font-size: 60px;
     display: inline;
   }
   main .index-container {
     position: relative;
+    right: 40px;
     top: 50px;
     margin-bottom: 100px;
     display: flex;
@@ -48,6 +67,12 @@
   main .index-container #new-launch-foto:hover {
     transform: scale(1.2);
     transition: all 1s;
+  }
+  .promo {
+    margin-bottom: 30px;
+  }
+  .promo #promo-banner {
+    width: 100%;
   }
   .trending-container {
     background-color: #EEEEEE;
@@ -81,20 +106,29 @@
   }
   .boy-girl {
     margin-top: 40px;
-    display: flex;
-    justify-content: center;
     margin-bottom: 100px;
-  }
-  .boy-girl .nena, .boy-girl .hombre, .boy-girl .mujer {
-    width: 450px;
-    margin-right: 100px;
-    transition: box-shadow 0.3s ease;
-  }
-  .boy-girl .nena:hover, .boy-girl .hombre:hover, .boy-girl .mujer:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "mujer hombre nena" "etiqueta-m etiqueta-h etiqueta-n";
   }
   .boy-girl .nena {
+    grid-area: nena;
     height: 300px;
+  }
+  .boy-girl #nena {
+    grid-area: etiqueta-n;
+  }
+  .boy-girl .hombre {
+    grid-area: nena;
+  }
+  .boy-girl #hombre {
+    grid-area: etiqueta-h;
+  }
+  .boy-girl .mujer {
+    grid-area: nena;
+  }
+  .boy-girl #mujer {
+    grid-area: etiqueta-m;
   }
   .mid-title {
     background-attachment: fixed;
@@ -151,6 +185,13 @@
   }
 }
 @media only screen and (max-width: 480px) {
+  .promo {
+    margin-bottom: 30px;
+  }
+  .promo #promo-banner {
+    width: 100%;
+    height: 200px;
+  }
   main .main-title {
     position: relative;
     top: 80px;
@@ -216,24 +257,31 @@
   }
   .boy-girl {
     margin-top: 40px;
-    display: flex;
+    display: grid;
+    row-gap: 30px;
     justify-content: center;
-    margin-bottom: 50px;
-  }
-  .boy-girl .nena, .boy-girl .hombre, .boy-girl .mujer {
-    width: 300px;
-    margin-left: 50px;
-    transition: box-shadow 0.3s ease;
-    margin-bottom: 40px;
-  }
-  .boy-girl .nena:hover, .boy-girl .hombre:hover, .boy-girl .mujer:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    grid-template-areas: "mujer" "hombre" "nena";
   }
   .boy-girl .nena {
+    grid-area: nena;
     height: 200px;
+    width: 300px;
+    padding-left: 50px;
+  }
+  .boy-girl .hombre {
+    grid-area: nena;
+    width: 300px;
+    padding-left: 50px;
+  }
+  .boy-girl .mujer {
+    grid-area: nena;
+    width: 300px;
+    padding-left: 50px;
+  }
+  .boy-girl #nena, .boy-girl #hombre, .boy-girl #mujer {
+    display: none;
   }
   .mid-title {
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     padding: 200px 0 200px 0;
