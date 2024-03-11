@@ -34,10 +34,18 @@
     font-size: 30px;
     font-family: $font-family;
     margin-top: 20px;
-    position: relative;
-    left: 190px;
 }
 
-#nena, #hombre, #mujer {
+#nena, #hombre, #mujer, #motors, #kayak, #oars{
     @extend %fotos-h3
+}
+%transform {
+    transform: scale(1);
+    transition: transform 1s;
+    &:hover {
+        border: 1px solid black;
+    }
+}
+.caña-1, .caña-2, .caña-3, .caña-4{
+    @extend %transform
 }

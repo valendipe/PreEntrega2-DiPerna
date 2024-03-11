@@ -88,6 +88,7 @@
         }
         #nena {
             grid-area: etiqueta-n;
+            padding: 0;
         }
         .hombre {
             grid-area: nena;
@@ -265,7 +266,7 @@
         justify-content: center;
         padding: 200px 0 200px 0;
         color: $color-secundario;
-        font-size: 62px;
+        font-size: 52px;
         margin-bottom: 10px;
     }
     .relojes-container {

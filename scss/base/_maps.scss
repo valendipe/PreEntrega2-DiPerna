@@ -3,7 +3,7 @@ $videos: (
     border: 9px solid $color-secundario,
     margin-bottom: 100px
 );
-#new-launch-video, #fishing-video {
+#new-launch-video{
     border: map-get($videos, border );
     margin-bottom: map-get($videos, margin-bottom );
 }
